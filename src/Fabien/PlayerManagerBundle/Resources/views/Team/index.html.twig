@@ -16,43 +16,45 @@
 
     <div class="row">
 
-        <div class="panel panel-default col-md-6">
-            <div class="panel-body">
-                <table class="table table-hover player">
-                    <thead>
-                    <tr>
-                        <th class="logo">Number</th>
-                        <th class="logo">Position</th>
-                        <th class="title">Player</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {% for player in team.getPlayers() %}
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <table class="table table-hover player">
+                        <thead>
                         <tr>
-                            <td class="number">#{{ player.getNumber() }}</td>
-                            <td>{{ player.getPosition() }}</td>
-                            <td>
-                                <span class="name">{{ player.getName() }}</span>
-                            </td>
+                            <th class="logo">Number</th>
+                            <th class="logo">Position</th>
+                            <th class="title">Player</th>
                         </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                        {% for player in team.getPlayers() %}
+                            <tr>
+                                <td class="number">#{{ player.getNumber() }}</td>
+                                <td>{{ player.getPosition() }}</td>
+                                <td>
+                                    <span class="name">{{ player.getName() }}</span>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <div class="col-md-1"></div>
-
-        <div class="panel panel-default col-md-5">
-            <div class="panel-body">
-                <p class="no-player-selected">Hover over a player to see their profile.</p>
-                <div class="player-profile">
-                    <img
-                        src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
-                        alt="{{ team.getPlayers()[0].getFirstName() }}'s picture"
-                        class="pull-left picture" />
-                    <p class="name lead">{{ team.getPlayers()[0].getName() }}</p>
-                    <p class="position"># {{ team.getPlayers()[0].getNumber() }} &mdash; {{ team.getPlayers()[0].getPosition() }}</p>
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="no-player-selected">Hover over a player to see their profile.</p>
+                    <div class="player-profile">
+                        <img
+                            src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
+                            alt="{{ team.getPlayers()[0].getFirstName() }}'s picture"
+                            class="pull-left picture" />
+                        <p class="name lead">{{ team.getPlayers()[0].getName() }}</p>
+                        <p class="position"># {{ team.getPlayers()[0].getNumber() }} &mdash; {{ team.getPlayers()[0].getPosition() }}</p>
+                    </div>
                 </div>
             </div>
         </div>
