@@ -14,7 +14,7 @@
         {{ team.getName() }}
     </h1>
 
-    <div class="row">
+    <div class="row" ng-controller="TeamController as controller">
 
         <div class="col-md-7">
             <div class="panel panel-default">
@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                         {% for player in team.getPlayers() %}
-                            <tr>
+                            <tr ng-click="controller.playerSelected({{ player.getId() }})">
                                 <td class="number">#{{ player.getNumber() }}</td>
                                 <td>{{ player.getPosition() }}</td>
                                 <td>
@@ -50,9 +50,9 @@
                     <div class="player-profile">
                         <img
                             src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
-                            alt="{{ team.getPlayers()[0].getFirstName() }}'s picture"
+                            alt="{[{ controller.firstName }]}'s picture"
                             class="pull-left picture" />
-                        <p class="name lead">{{ team.getPlayers()[0].getName() }}</p>
+                        <p class="name lead">{[{ controller.firstName + controller.lastName }]}</p>
                         <p class="position"># {{ team.getPlayers()[0].getNumber() }} &mdash; {{ team.getPlayers()[0].getPosition() }}</p>
                     </div>
                 </div>

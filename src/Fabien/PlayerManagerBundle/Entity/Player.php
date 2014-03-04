@@ -9,6 +9,7 @@
 namespace Fabien\PlayerManagerBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation\Exclude;
 
 /**
  * @ORM\Entity
@@ -44,7 +45,7 @@ class Player
     protected $position;
 
     /**
-     * @ORM\Column(type="boolean", name="designated_player", nullable=true)
+     * @ORM\Column(type="boolean", name="designated_player", nullable=false)
      */
     protected $designatedPlayer;
 
@@ -56,6 +57,7 @@ class Player
     /**
      * @ORM\JoinColumn(nullable=false)
      * @ORM\ManyToOne(targetEntity="Team", inversedBy="players")
+     * @Exclude
      */
     protected $team;
 
