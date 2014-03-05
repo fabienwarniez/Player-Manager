@@ -11,12 +11,15 @@ angular.module('player-manager', [])
     })
     .controller('TeamController', function($scope, $http)
     {
+        $scope.playerSelected = false;
+        $scope.imageAvailable = true;
         $scope.playerId = -1;
-        $scope.playerFirstName = "First Name";
+        $scope.playerFirstName = "";
         $scope.playerLastName = "";
         $scope.playerNumber = "";
+        $scope.playerPosition = "";
 
-        this.playerSelected = function selectPlayer(playerId, $scope)
+        this.playerSelected = function selectPlayer(playerId)
         {
             // show loading GIF
 
@@ -25,9 +28,14 @@ angular.module('player-manager', [])
                 {
                     if (status = 200)
                     {
+                        $scope.playerSelected = true;
                         $scope.playerId = data.id;
                         $scope.playerFirstName = data.first_name;
                         $scope.playerLastName = data.last_name;
+                        $scope.playerNumber = data.number;
+                        $scope.playerPosition = data.position;
+                        $scope.playerPictureFileName = data.picture_file_name;
+                        $scope.imageAvailable = data.picture_file_name != undefined;
                     }
                     else
                     {

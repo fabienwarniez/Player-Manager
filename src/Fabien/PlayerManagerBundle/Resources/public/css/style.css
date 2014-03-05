@@ -73,3 +73,14 @@ h1 img
 {
     font-size: 1.2em;
 }
+
+.player-profile .number-placeholder
+{
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    text-align: center;
+    font-size: 3em;
+}
