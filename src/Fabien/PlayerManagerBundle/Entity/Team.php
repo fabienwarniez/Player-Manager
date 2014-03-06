@@ -40,7 +40,7 @@ class Team
     protected $logoFileName;
 
     /**
-     * @ORM\ManyToOne(targetEntity="League")
+     * @ORM\ManyToOne(targetEntity="League", inversedBy="teams")
      * @ORM\JoinColumn(nullable=false)
      */
     protected $league;

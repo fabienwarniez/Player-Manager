@@ -28,8 +28,8 @@
                     {% if team.getLogoFileName() | default %}
                         <a href="{{ path('fabien_playermanager_team_index', {'slug': team.getSlug() }) }}">
                             <img
-                                    src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getLogoFileName()) }}"
-                                    alt="{{ team.getName() }}'s logo" />
+                                src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getLogoFileName()) }}"
+                                alt="{{ team.getName() }}'s logo" />
                         </a>
                     {% endif %}
                 </td>

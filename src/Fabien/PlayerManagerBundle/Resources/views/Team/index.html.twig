@@ -44,19 +44,20 @@
         </div>
 
         <div class="col-md-5">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <p ng-show="!playerSelected" class="no-player-selected">Hover over a player to see their profile.</p>
-                    <div ng-show="playerSelected" class="player-profile">
-                        <img ng-show="imageAvailable"
-                            src="{{ asset('bundles/fabienplayermanager/images/') }}{[{ playerPictureFileName }]}"
-                            alt="{[{ firstName }]}'s picture"
-                            class="pull-left picture" />
-                        <div ng-show="!imageAvailable" class="number-placeholder pull-left">#{[{ playerNumber }]}</div>
-                        <p class="name lead">{[{ playerFirstName + ' ' + playerLastName }]}</p>
-                        <p class="position">#{[{ playerNumber }]} &mdash; {[{ playerPosition }]}</p>
+            <div class="well clearfix player-profile">
+                <p ng-show="!playerSelected" class="no-player-selected">Hover over a player to see their profile.</p>
+                <div ng-show="playerSelected">
+                    <img ng-show="imageAvailable"
+                        src="{{ asset('bundles/fabienplayermanager/images/') }}{[{ playerPictureFileName }]}"
+                        alt="{[{ firstName }]}'s picture"
+                        class="pull-left picture" />
+                    <div ng-show="!imageAvailable" class="number-placeholder pull-left">
+                        <div class="vertical-center">#{[{ playerNumber }]}</div>
                     </div>
+                    <p class="name lead">{[{ playerFirstName + ' ' + playerLastName }]}</p>
+                    <p class="position">#{[{ playerNumber }]} &mdash; {[{ playerPosition }]}</p>
                 </div>
+                <div ng-show="loading" class="loading-overlay"><span class="loading-overlay-inner lead">Loading...</span></div>
             </div>
         </div>
 

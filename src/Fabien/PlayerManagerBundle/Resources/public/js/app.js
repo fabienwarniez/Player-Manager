@@ -18,14 +18,16 @@ angular.module('player-manager', [])
         $scope.playerLastName = "";
         $scope.playerNumber = "";
         $scope.playerPosition = "";
+        $scope.loading = false;
 
         this.playerSelected = function selectPlayer(playerId)
         {
-            // show loading GIF
+            $scope.loading = true;
 
             $http({method: 'GET', url: rootURL + 'api/get-player-profile/' + playerId})
                 .success(function(data, status, headers, config)
                 {
+                    $scope.loading = false;
                     if (status = 200)
                     {
                         $scope.playerSelected = true;
