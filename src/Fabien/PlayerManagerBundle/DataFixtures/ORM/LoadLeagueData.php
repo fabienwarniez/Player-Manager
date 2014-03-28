@@ -136,26 +136,7 @@ class LoadLeagueData implements FixtureInterface
                         'name' => 'Whitecaps FC',
                         'slug' => 'whitecaps-fc',
                         'logo-file-name' => 'mls/whitecaps-fc.jpg',
-                        'players' => array(
-                            array(
-                                'first_name' => 'Jordan',
-                                'last_name' => 'Harvey',
-                                'number' => 2,
-                                'designated_player' => false
-                            ),
-                            array(
-                                'first_name' => 'Jay',
-                                'last_name' => 'DeMerit',
-                                'number' => 6,
-                                'designated_player' => false
-                            ),
-                            array(
-                                'first_name' => 'Kenny',
-                                'last_name' => 'Miller',
-                                'number' => 9,
-                                'designated_player' => true
-                            )
-                        )
+                        'players' => array()
                     )
                 )
             ),
@@ -180,7 +161,214 @@ class LoadLeagueData implements FixtureInterface
                         'name' => 'Arsenal',
                         'slug' => 'arsenal',
                         'logo-file-name' => 'bpl/arsenal.jpg',
-                        'players' => array()
+                        'players' => array(
+                            array(
+                                'first-name' => 'Wojciech',
+                                'last-name' => 'Szczęsny',
+                                'position' => 'GK',
+                                'number' => 1,
+                                'image-file-name' => 'players/wojciech-szczesny.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Bacary',
+                                'last-name' => 'Sagna',
+                                'position' => 'DF',
+                                'number' => 3,
+                                'image-file-name' => 'players/bacary-sagna.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Per',
+                                'last-name' => 'Mertesacker',
+                                'position' => 'DF',
+                                'number' => 4,
+                                'image-file-name' => 'players/per-mertesacker.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Thomas',
+                                'last-name' => 'Vermaelen',
+                                'position' => 'DF',
+                                'number' => 5,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Laurent',
+                                'last-name' => 'Koscielny',
+                                'position' => 'DF',
+                                'number' => 6,
+                                'image-file-name' => 'players/laurent-koscielny.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Tomáš',
+                                'last-name' => 'Rosický',
+                                'position' => 'MF',
+                                'number' => 7,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Mikel',
+                                'last-name' => 'Arteta',
+                                'position' => 'MF',
+                                'number' => 8,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Lukas',
+                                'last-name' => 'Podolski',
+                                'position' => 'FW',
+                                'number' => 9,
+                                'image-file-name' => 'players/lukas-podolski.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Jack',
+                                'last-name' => 'Wilshere',
+                                'position' => 'MF',
+                                'number' => 10,
+                                'image-file-name' => 'players/jack-wilshere.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Mesut',
+                                'last-name' => 'Özil',
+                                'position' => 'MF',
+                                'number' => 11,
+                                'image-file-name' => 'players/mesut-ozil.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Olivier',
+                                'last-name' => 'Giroud',
+                                'position' => 'FW',
+                                'number' => 12,
+                                'image-file-name' => 'players/olivier-giroud.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Emiliano',
+                                'last-name' => 'Viviano',
+                                'position' => 'GK',
+                                'number' => 13,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Theo',
+                                'last-name' => 'Walcott',
+                                'position' => 'FW',
+                                'number' => 14,
+                                'image-file-name' => 'players/theo-walcott.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Alex',
+                                'last-name' => 'Oxlade-Chamberlain',
+                                'position' => 'GK',
+                                'number' => 15,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Aaron',
+                                'last-name' => 'Ramsey',
+                                'position' => 'MF',
+                                'number' => 16,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Nacho',
+                                'last-name' => 'Monreal',
+                                'position' => 'DF',
+                                'number' => 17,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Santi',
+                                'last-name' => 'Cazorla',
+                                'position' => 'MF',
+                                'number' => 19,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Mathieu',
+                                'last-name' => 'Flamini',
+                                'position' => 'MF',
+                                'number' => 20,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Łukasz',
+                                'last-name' => 'Fabiański',
+                                'position' => 'GK',
+                                'number' => 21,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Yaya',
+                                'last-name' => 'Sanogo',
+                                'position' => 'FW',
+                                'number' => 22,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Nicklas',
+                                'last-name' => 'Bendtner',
+                                'position' => 'FW',
+                                'number' => 23,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Abou',
+                                'last-name' => 'Diaby',
+                                'position' => 'MF',
+                                'number' => 24,
+                                'image-file-name' => 'players/abou-diaby.jpg',
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Carl',
+                                'last-name' => 'Jenkinson',
+                                'position' => 'DF',
+                                'number' => 25,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Kieran',
+                                'last-name' => 'Gibbs',
+                                'position' => 'DF',
+                                'number' => 28,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Kim',
+                                'last-name' => 'Källström',
+                                'position' => 'MF',
+                                'number' => 29,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Ryo',
+                                'last-name' => 'Miyaichi',
+                                'position' => 'FW',
+                                'number' => 31,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Serge',
+                                'last-name' => 'Gnabry',
+                                'position' => 'FW',
+                                'number' => 44,
+                                'designated-player' => false
+                            ),
+                            array(
+                                'first-name' => 'Gedion',
+                                'last-name' => 'Zelalem',
+                                'position' => 'MF',
+                                'number' => 58,
+                                'designated-player' => false
+                            ),
+                        )
                     ),
                     array(
                         'name' => 'Aston Villa',
@@ -311,10 +499,14 @@ class LoadLeagueData implements FixtureInterface
                 foreach ($team['players'] as $player)
                 {
                     $managedPlayer = new Player();
-                    $managedPlayer->setFirstName($player['first_name']);
-                    $managedPlayer->setLastName($player['last_name']);
+                    $managedPlayer->setFirstName($player['first-name']);
+                    $managedPlayer->setLastName($player['last-name']);
                     $managedPlayer->setNumber($player['number']);
-                    $managedPlayer->setDesignatedPlayer($player['designated_player']);
+                    $managedPlayer->setDesignatedPlayer($player['designated-player']);
+                    if (isset($player['picture-file-name']))
+                    {
+                        $managedPlayer->setPictureFileName($player['picture-file-name']);
+                    }
 
                     $manager->persist($managedPlayer);
 

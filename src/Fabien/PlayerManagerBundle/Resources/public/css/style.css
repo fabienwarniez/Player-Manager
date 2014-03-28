@@ -57,3 +57,8 @@ h1 img
 {
     font-weight: bold;
 }
+
+.player .picture img
+{
+    max-width: 100px;
+}
