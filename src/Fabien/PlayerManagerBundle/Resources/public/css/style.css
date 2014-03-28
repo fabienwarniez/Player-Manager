@@ -10,6 +10,11 @@
     margin: auto;
 }
 
+h1 img
+{
+    height: 1em;
+}
+
 /* LEAGUES */
 
 .league .logo img
