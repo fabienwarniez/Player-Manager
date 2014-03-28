@@ -18,10 +18,20 @@
     max-height: 100px;
 }
 
+.league td.logo
+{
+    text-align: center;
+}
+
 /* TEAMS */
 
 .team .logo img
 {
     max-width: 100px;
     max-height: 100px;
+}
+
+.team td.logo
+{
+    text-align: center;
 }
