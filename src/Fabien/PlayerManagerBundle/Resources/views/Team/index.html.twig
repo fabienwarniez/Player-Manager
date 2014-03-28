@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ parent() }} - {{ team.getName() }}{% endblock %}
+
+{% block body %}
+
+    <h1>{{ team.getName() }}</h1>
+
+    <ul>
+        {% for player in team.getPlayers() %}
+            <li>
+                <a href="{{ path('fabien_playermanager_player_index', {'id': player.getId() }) }}">
+                    {{ player.getNumber() }} &mdash; {{  player.getName() }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

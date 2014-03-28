@@ -1,0 +1,43 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ parent() }} - Home{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/fabienplayermanager/css/' ~ 'style.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+
+    <table class="table league auto-width auto-margin">
+        <thead>
+            <tr>
+                <th class="logo">Logo</th>
+                <th class="title">League Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for league in leagues %}
+                <tr>
+                    <td class="logo">
+                        {% if league.getLogoFileName() | default %}
+                            <a href="{{ path('fabien_playermanager_league_index', {'slug': league.getSlug() }) }}">
+                                <img
+                                    src="{{ asset('bundles/fabienplayermanager/images/' ~ league.getLogoFileName()) }}"
+                                    alt="{{ league.getName() }}'s logo" />
+                            </a>
+                        {% endif %}
+                    </td>
+                    <td class="title">
+                        <p class="lead">
+                            <a href="{{ path('fabien_playermanager_league_index', {'slug': league.getSlug() }) }}">
+                                <span>{{ league.getName() }}</span>
+                            </a>
+                        </p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{%  endblock %}

@@ -1,0 +1,27 @@
+/* GENERAL */
+
+.auto-width
+{
+    width: auto;
+}
+
+.auto-margin
+{
+    margin: auto;
+}
+
+/* LEAGUES */
+
+.league .logo img
+{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* TEAMS */
+
+.team .logo img
+{
+    max-width: 100px;
+    max-height: 100px;
+}
