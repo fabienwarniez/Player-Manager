@@ -50,3 +50,10 @@ h1 img
 {
     text-decoration: none;
 }
+
+/* PLAYERS */
+
+.player .number
+{
+    font-weight: bold;
+}

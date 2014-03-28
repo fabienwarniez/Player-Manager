@@ -35,7 +35,7 @@
                 </td>
                 <td class="title">
                     <p class="lead">
-                        <a href="{{ path('fabien_playermanager_league_index', {'slug': team.getSlug() }) }}">
+                        <a href="{{ path('fabien_playermanager_team_index', {'slug': team.getSlug() }) }}">
                             <span>{{ team.getName() }}</span>
                         </a>
                     </p>
@@ -44,4 +44,5 @@
         {% endfor %}
         </tbody>
     </table>
+
 {% endblock %}
