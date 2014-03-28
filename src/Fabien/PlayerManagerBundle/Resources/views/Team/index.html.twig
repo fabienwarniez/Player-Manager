@@ -51,9 +51,8 @@
                         src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
                         alt="{{ team.getPlayers()[0].getFirstName() }}'s picture"
                         class="pull-left picture" />
-                    <p class="name">{{ team.getPlayers()[0].getName() }}</p>
-                    <p class="position">{{ team.getPlayers()[0].getPosition() }}</p>
-                    <p class="number">{{ team.getPlayers()[0].getNumber() }}</p>
+                    <p class="name lead">{{ team.getPlayers()[0].getName() }}</p>
+                    <p class="position"># {{ team.getPlayers()[0].getNumber() }} &mdash; {{ team.getPlayers()[0].getPosition() }}</p>
                 </div>
             </div>
         </div>

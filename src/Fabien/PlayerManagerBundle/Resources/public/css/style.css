@@ -63,3 +63,13 @@ h1 img
     max-width: 100px;
     margin-right: 20px;
 }
+
+.player-profile .name
+{
+    margin-bottom: 5px;
+}
+
+.player-profile .position
+{
+    font-size: 1.2em;
+}
