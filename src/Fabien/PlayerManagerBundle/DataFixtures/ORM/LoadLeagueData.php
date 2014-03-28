@@ -22,120 +22,120 @@ class LoadLeagueData implements FixtureInterface
             array(
                 'name' => 'Major League Soccer',
                 'slug' => 'major-league-soccer',
-                'logo-file-name' => 'leagues/major-league-soccer.png',
+                'logo-file-name' => 'leagues/major-league-soccer.jpg',
                 'teams' => array(
                     array(
                         'name' => 'Chicago Fire',
                         'slug' => 'chicago-fire',
-                        'logo-file-name' => 'mls/chicago-fire.png',
+                        'logo-file-name' => 'mls/chicago-fire.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Columbus Crew',
                         'slug' => 'columbus-crew',
-                        'logo-file-name' => 'mls/columbus-crew.png',
+                        'logo-file-name' => 'mls/columbus-crew.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'D.C. United',
                         'slug' => 'dc-united',
-                        'logo-file-name' => 'mls/dc-united.png',
+                        'logo-file-name' => 'mls/dc-united.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Houston Dynamo',
                         'slug' => 'houston-dynamo',
-                        'logo-file-name' => 'mls/houston-dynamo.png',
+                        'logo-file-name' => 'mls/houston-dynamo.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Montreal Impact',
                         'slug' => 'montreal-impact',
-                        'logo-file-name' => 'mls/montreal-impact.png',
+                        'logo-file-name' => 'mls/montreal-impact.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'New England Revolution',
                         'slug' => 'new-england-revolution',
-                        'logo-file-name' => 'mls/new-england-revolution.png',
+                        'logo-file-name' => 'mls/new-england-revolution.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'New York Red Bulls',
                         'slug' => 'new-york-red-bulls',
-                        'logo-file-name' => 'mls/new-york-red-bulls.png',
+                        'logo-file-name' => 'mls/new-york-red-bulls.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Philadelphia Union',
                         'slug' => 'philadelphia-union',
-                        'logo-file-name' => 'mls/philadelphia-union.png',
+                        'logo-file-name' => 'mls/philadelphia-union.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Sporting Kansas City',
                         'slug' => 'sporting-kansas-city',
-                        'logo-file-name' => 'mls/sporting-kansas-city.png',
+                        'logo-file-name' => 'mls/sporting-kansas-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Toronto FC',
                         'slug' => 'toronto-fc',
-                        'logo-file-name' => 'mls/toronto-fc.png',
+                        'logo-file-name' => 'mls/toronto-fc.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Chivas USA',
                         'slug' => 'chivas-usa',
-                        'logo-file-name' => 'mls/chivas-usa.png',
+                        'logo-file-name' => 'mls/chivas-usa.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Colorado Rapids',
                         'slug' => 'colorado-rapids',
-                        'logo-file-name' => 'mls/colorado-rapids.png',
+                        'logo-file-name' => 'mls/colorado-rapids.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'FC Dallas',
                         'slug' => 'fc-dallas',
-                        'logo-file-name' => 'mls/fc-dallas.png',
+                        'logo-file-name' => 'mls/fc-dallas.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Los Angeles Galaxy',
                         'slug' => 'los-angeles-galaxy',
-                        'logo-file-name' => 'mls/los-angeles-galaxy.png',
+                        'logo-file-name' => 'mls/los-angeles-galaxy.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Portland Timbers',
                         'slug' => 'portland-timbers',
-                        'logo-file-name' => 'mls/portland-timbers.png',
+                        'logo-file-name' => 'mls/portland-timbers.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Real Salt Lake',
                         'slug' => 'real-salt-lake',
-                        'logo-file-name' => 'mls/real-salt-lake.png',
+                        'logo-file-name' => 'mls/real-salt-lake.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'San Jose Earthquakes',
                         'slug' => 'san-jose-earthquakes',
-                        'logo-file-name' => 'mls/san-jose-earthquakes.png',
+                        'logo-file-name' => 'mls/san-jose-earthquakes.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Seattle Sounders FC',
                         'slug' => 'seattle-sounders-fc',
-                        'logo-file-name' => 'mls/seattle-sounders-fc.png',
+                        'logo-file-name' => 'mls/seattle-sounders-fc.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Whitecaps FC',
                         'slug' => 'whitecaps-fc',
-                        'logo-file-name' => 'mls/whitecaps-fc.png',
+                        'logo-file-name' => 'mls/whitecaps-fc.jpg',
                         'players' => array(
                             array(
                                 'first_name' => 'Jordan',
@@ -162,126 +162,126 @@ class LoadLeagueData implements FixtureInterface
             array(
                 'name' => 'Ligue 1',
                 'slug' => 'ligue-1',
-                'logo-file-name' => 'leagues/ligue-1.png',
+                'logo-file-name' => 'leagues/ligue-1.jpg',
                 'teams' => array()
             ),
             array(
                 'name' => 'Bundesliga',
                 'slug' => 'bundesliga',
-                'logo-file-name' => 'leagues/bundesliga.png',
+                'logo-file-name' => 'leagues/bundesliga.jpg',
                 'teams' => array()
             ),
             array(
                 'name' => 'Barclays Premier League',
                 'slug' => 'barclays-premier-league',
-                'logo-file-name' => 'leagues/barclays-premier-league.png',
+                'logo-file-name' => 'leagues/barclays-premier-league.jpg',
                 'teams' => array(
                     array(
                         'name' => 'Arsenal',
                         'slug' => 'arsenal',
-                        'logo-file-name' => 'bpl/arsenal.png',
+                        'logo-file-name' => 'bpl/arsenal.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Aston Villa',
                         'slug' => 'aston-villa',
-                        'logo-file-name' => 'bpl/aston-villa.png',
+                        'logo-file-name' => 'bpl/aston-villa.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Cardiff City',
                         'slug' => 'cardiff-city',
-                        'logo-file-name' => 'bpl/cardiff-city.png',
+                        'logo-file-name' => 'bpl/cardiff-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Chelsea',
                         'slug' => 'chelsea',
-                        'logo-file-name' => 'bpl/chelsea.png',
+                        'logo-file-name' => 'bpl/chelsea.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Crystal Palace',
                         'slug' => 'crystal-palace',
-                        'logo-file-name' => 'bpl/crystal-palace.png',
+                        'logo-file-name' => 'bpl/crystal-palace.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Everton',
                         'slug' => 'everton',
-                        'logo-file-name' => 'bpl/everton.png',
+                        'logo-file-name' => 'bpl/everton.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Fulham',
                         'slug' => 'fulham',
-                        'logo-file-name' => 'bpl/fulham.png',
+                        'logo-file-name' => 'bpl/fulham.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Hull City',
                         'slug' => 'hull-city',
-                        'logo-file-name' => 'bpl/hull-city.png',
+                        'logo-file-name' => 'bpl/hull-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Liverpool',
                         'slug' => 'liverpool',
-                        'logo-file-name' => 'bpl/liverpool.png',
+                        'logo-file-name' => 'bpl/liverpool.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Manchester City',
                         'slug' => 'manchester-city',
-                        'logo-file-name' => 'bpl/manchester-city.png',
+                        'logo-file-name' => 'bpl/manchester-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Manchester United',
                         'slug' => 'manchester-united',
-                        'logo-file-name' => 'bpl/manchester-united.png',
+                        'logo-file-name' => 'bpl/manchester-united.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Newcastle United',
                         'slug' => 'newcastle-united',
-                        'logo-file-name' => 'bpl/newcastle-united.png',
+                        'logo-file-name' => 'bpl/newcastle-united.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Norwich City',
                         'slug' => 'norwich-city',
-                        'logo-file-name' => 'bpl/norwich-city.png',
+                        'logo-file-name' => 'bpl/norwich-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Sunderland',
                         'slug' => 'sunderland',
-                        'logo-file-name' => 'bpl/sunderland.png',
+                        'logo-file-name' => 'bpl/sunderland.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Swansea City',
                         'slug' => 'swansea-city',
-                        'logo-file-name' => 'bpl/swansea-city.png',
+                        'logo-file-name' => 'bpl/swansea-city.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'Tottenham Hotspur',
                         'slug' => 'tottenham-hotspur',
-                        'logo-file-name' => 'bpl/tottenham-hotspur.png',
+                        'logo-file-name' => 'bpl/tottenham-hotspur.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'West Bromwich Albion',
                         'slug' => 'west-bromwich-albion',
-                        'logo-file-name' => 'bpl/west-bromwich-albion.png',
+                        'logo-file-name' => 'bpl/west-bromwich-albion.jpg',
                         'players' => array()
                     ),
                     array(
                         'name' => 'West Ham United',
                         'slug' => 'west-ham-united',
-                        'logo-file-name' => 'bpl/west-ham-united.png',
+                        'logo-file-name' => 'bpl/west-ham-united.jpg',
                         'players' => array()
                     )
                 )
