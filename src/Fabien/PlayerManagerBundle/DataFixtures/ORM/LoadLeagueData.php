@@ -167,7 +167,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Szczęsny',
                                 'position' => 'GK',
                                 'number' => 1,
-                                'image-file-name' => 'players/wojciech-szczesny.jpg',
+                                'picture-file-name' => 'players/wojciech-szczesny.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -175,7 +175,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Sagna',
                                 'position' => 'DF',
                                 'number' => 3,
-                                'image-file-name' => 'players/bacary-sagna.jpg',
+                                'picture-file-name' => 'players/bacary-sagna.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -183,7 +183,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Mertesacker',
                                 'position' => 'DF',
                                 'number' => 4,
-                                'image-file-name' => 'players/per-mertesacker.jpg',
+                                'picture-file-name' => 'players/per-mertesacker.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -198,7 +198,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Koscielny',
                                 'position' => 'DF',
                                 'number' => 6,
-                                'image-file-name' => 'players/laurent-koscielny.jpg',
+                                'picture-file-name' => 'players/laurent-koscielny.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -220,7 +220,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Podolski',
                                 'position' => 'FW',
                                 'number' => 9,
-                                'image-file-name' => 'players/lukas-podolski.jpg',
+                                'picture-file-name' => 'players/lukas-podolski.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -228,7 +228,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Wilshere',
                                 'position' => 'MF',
                                 'number' => 10,
-                                'image-file-name' => 'players/jack-wilshere.jpg',
+                                'picture-file-name' => 'players/jack-wilshere.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -236,7 +236,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Özil',
                                 'position' => 'MF',
                                 'number' => 11,
-                                'image-file-name' => 'players/mesut-ozil.jpg',
+                                'picture-file-name' => 'players/mesut-ozil.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -244,7 +244,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Giroud',
                                 'position' => 'FW',
                                 'number' => 12,
-                                'image-file-name' => 'players/olivier-giroud.jpg',
+                                'picture-file-name' => 'players/olivier-giroud.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -259,7 +259,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Walcott',
                                 'position' => 'FW',
                                 'number' => 14,
-                                'image-file-name' => 'players/theo-walcott.jpg',
+                                'picture-file-name' => 'players/theo-walcott.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -323,7 +323,7 @@ class LoadLeagueData implements FixtureInterface
                                 'last-name' => 'Diaby',
                                 'position' => 'MF',
                                 'number' => 24,
-                                'image-file-name' => 'players/abou-diaby.jpg',
+                                'picture-file-name' => 'players/abou-diaby.jpg',
                                 'designated-player' => false
                             ),
                             array(
@@ -502,6 +502,7 @@ class LoadLeagueData implements FixtureInterface
                     $managedPlayer->setFirstName($player['first-name']);
                     $managedPlayer->setLastName($player['last-name']);
                     $managedPlayer->setNumber($player['number']);
+                    $managedPlayer->setPosition($player['position']);
                     $managedPlayer->setDesignatedPlayer($player['designated-player']);
                     if (isset($player['picture-file-name']))
                     {

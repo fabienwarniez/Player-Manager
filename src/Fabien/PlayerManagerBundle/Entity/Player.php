@@ -39,6 +39,11 @@ class Player
     protected $number;
 
     /**
+     * @ORM\Column(type="string", length=2, nullable=true)
+     */
+    protected $position;
+
+    /**
      * @ORM\Column(type="boolean", name="designated_player", nullable=true)
      */
     protected $designatedPlayer;
@@ -212,5 +217,28 @@ class Player
     public function getPictureFileName()
     {
         return $this->pictureFileName;
+    }
+
+    /**
+     * Set position
+     *
+     * @param string $position
+     * @return Player
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * Get position
+     *
+     * @return string 
+     */
+    public function getPosition()
+    {
+        return $this->position;
     }
 }

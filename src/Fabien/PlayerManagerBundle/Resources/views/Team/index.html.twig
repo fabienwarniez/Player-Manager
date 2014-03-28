@@ -16,7 +16,7 @@
 
     <div class="row">
 
-        <div class="panel panel-default col-xs-5">
+        <div class="panel panel-default col-md-6">
             <div class="panel-body">
                 <table class="table table-hover player">
                     <thead>
@@ -30,7 +30,7 @@
                     {% for player in team.getPlayers() %}
                         <tr>
                             <td class="number">#{{ player.getNumber() }}</td>
-                            <td>LW</td>
+                            <td>{{ player.getPosition() }}</td>
                             <td>
                                 <span class="name">{{ player.getName() }}</span>
                             </td>
@@ -41,21 +41,19 @@
             </div>
         </div>
 
-        <div class="col-xs-1"></div>
+        <div class="col-md-1"></div>
 
-        <div class="panel panel-default col-xs-6">
+        <div class="panel panel-default col-md-5">
             <div class="panel-body">
                 <p class="no-player-selected">Hover over a player to see their profile.</p>
-                <div class="player-profile row">
-                    <div class="picture col-xs-6 col-md-3">
-                        <img
-                            src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
-                            alt="{{ team.getPlayers()[0].getFirstName() }}'s picture" />
-                    </div>
-                    <div class="col-xs-6 col-md-9">
-                        <p>{{ team.getPlayers()[0].getName() }}</p>
-                        <p>{{ team.getPlayers()[0].getNumber() }}</p>
-                    </div>
+                <div class="player-profile">
+                    <img
+                        src="{{ asset('bundles/fabienplayermanager/images/' ~ team.getPlayers()[0].getPictureFileName()) }}"
+                        alt="{{ team.getPlayers()[0].getFirstName() }}'s picture"
+                        class="pull-left picture" />
+                    <p class="name">{{ team.getPlayers()[0].getName() }}</p>
+                    <p class="position">{{ team.getPlayers()[0].getPosition() }}</p>
+                    <p class="number">{{ team.getPlayers()[0].getNumber() }}</p>
                 </div>
             </div>
         </div>

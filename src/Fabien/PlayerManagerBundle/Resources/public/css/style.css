@@ -58,7 +58,8 @@ h1 img
     font-weight: bold;
 }
 
-.player .picture img
+.player-profile img.picture
 {
     max-width: 100px;
+    margin-right: 20px;
 }
