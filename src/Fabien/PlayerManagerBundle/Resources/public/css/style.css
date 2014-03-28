@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.league td.title a
+{
+    text-decoration: none;
+}
+
 /* TEAMS */
 
 .team .logo img
@@ -34,4 +39,9 @@
 .team td.logo
 {
     text-align: center;
+}
+
+.team td.title a
+{
+    text-decoration: none;
 }

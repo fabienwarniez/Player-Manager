@@ -22,6 +22,8 @@
         <div class="container">
             {% block body %}{% endblock %}
         </div>
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/retina-1.1.0.min.js') }}" />
+        {% endblock %}
     </body>
 </html>
